@@ -1,0 +1,6 @@
+Player wins: 1
+Dealer wins: 0
+Tie games: 0
+Player Blackjacks: 0
+Dealer Blackjacks: 0
+Total games: 0
