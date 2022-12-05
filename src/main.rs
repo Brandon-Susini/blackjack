@@ -1,44 +1,8 @@
-
-//Now that hand and card structs are in place,
-//**fix the print both hands method so that it prints the pretty display**
-
-/*How will it work?
-Upon run, ask user if they are ready to play.
--> y, start game
--> n, quit game
-
-**Game play loop**
-Start by dealing a card to the house. Notify the user about this card.
-**Deal loop**
-Next, deal a card to the user.
-Check for a bust. **
--> if there is a bust, notify the user they lost this hand.
-    -> Ask if they would like to play again.
-    -> If yes start from the beginning
--> if there is no bust, prompt if they would like to hit or stay
-    ->if stay, move to house loop.
-    ->if hit, restart deal loop.
-**House loop**
-Deal cards to the house until they are above a certain value.
-if the house busts, the user wins
-->prompt user if they would like to play again
-    ->If y, restart game loop
-    ->If n, quit application.
-END OF APPLICATION
+/*
+    Program Name: blackjack
+    Author: Brandon Susini
+    Date: Fall 2023
 */
-
-/* What architecture will we need?
-Cards can be represented as a number, suit pair. Predefined tuples or struct?
-The deck will be an array wrapped in a module.
--> needs shuffle
--> dealFrom
--> display
-Hands can just be tuples or arrays?
--> display
--> clear
-*/
-//REMEMBER: because of crazy rust things 49 == 1 for debug mode
-    //50 == 2 for debug mode
 use std::io;
 use rand::{thread_rng, Rng};
 use std::fs;
@@ -72,17 +36,24 @@ impl Card{
             _=> return "Number too high",
         }
     }
-    fn print_card(&self){
-        println!("{} of {}", self.name, self.suit);
+    fn get_card_string(&self) -> String{
+        format!("{} of {}", self.name, self.suit)
     }
 }
 ///Hand struct that contains a vector of Card structs
 #[derive(Debug,Clone)]
 struct Hand{
+    owner: String,
     cards: Vec<Card>,
 }
 ///Implementations for the Hand struct
 impl Hand{
+    fn new(name:&str) -> Hand{
+        Hand{
+            owner:name.to_string(),
+            cards: Vec::new()
+        }
+    }
     ///Iterates through all cards in a Hand and returns the sum of the values.
     fn calculate_total(&self) -> Cardvalue{
         let mut sum:Cardvalue = 0;
@@ -103,9 +74,12 @@ impl Hand{
     }
     ///Prints information about the cards held in the Hand card by card.
     fn print_hand(&self){
+        println!("==============");
+        println!("| *{}'s Hand:",self.owner);
         for (x,card) in self.cards.iter().enumerate(){
-            println!("Card {}, {} of {}",x,card.value, card.suit);
+            println!("| Card {}, \t{} of {}",x+1,card.value, card.suit);
         }
+        println!("==============");
     }
     
 }
@@ -231,8 +205,8 @@ fn game_body(replay: &mut bool, stats: &mut HashMap<String,u8>){
     take_input(&vec!['r'], "Press (r) to begin!");
     
     //Game starts, dealer gets 1 card, then user gets to take their entire turn.
-    let mut dealer_hand: Hand = Hand{cards: Vec::<Card>::new()};
-    let mut player_hand: Hand = Hand{cards: Vec::<Card>::new()};
+    let mut dealer_hand: Hand = Hand::new("Dealer");
+    let mut player_hand: Hand = Hand::new("Player");
     dealer_hand.add_card(get_random_card());
     println!("Dealing the dealers hand.");
     dealer_hand.print_hand();
@@ -246,7 +220,7 @@ fn game_body(replay: &mut bool, stats: &mut HashMap<String,u8>){
         if answer == 'h'{
             //hit
             let new_card = get_random_card();
-            new_card.print_card();
+            println!("Dealt card: {}",new_card.get_card_string());
             player_hand.add_card(new_card);
             player_hand.print_hand();
             //THIS IS WHERE PRINT BOTH HANDS GOES
@@ -262,7 +236,7 @@ fn game_body(replay: &mut bool, stats: &mut HashMap<String,u8>){
             //Theres your winner.
             println!("Dealing card to the dealer.");
             let new_card = get_random_card();
-            new_card.print_card();
+            println!("Dealt card: {}",new_card.get_card_string());
             dealer_hand.add_card(new_card);
             let p_total:Cardvalue = player_hand.calculate_total();
             let d_total:Cardvalue = dealer_hand.calculate_total();
@@ -375,7 +349,8 @@ fn get_random_card() -> Card{
     let this_value = get_random_num(13);
     let suit_num:usize = (get_random_num(4) - 1).into();
     let suit:&str = all_suits[suit_num];
-    return Card{value:this_value,name:Card::get_card_name(this_value),suit:suit}
+    let values = (get_random_num(13),all_suits[(<u8 as Into<usize>>::into(get_random_num(4) - 1))]);
+    return Card{value:values.0,name:Card::get_card_name(values.0),suit:values.1}
 }
 
 //TODO: REWORK QUIT(q in input and saying no to replay) TO EXIT SAFELY AND WRITE NEW VALUES TO stats.txt
