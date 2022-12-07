@@ -1,10 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/main.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>main.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../storage.js"></script><script defer src="../../source-script.js"></script><script defer src="../../source-files.js"></script><script defer src="../../main.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../blackjack/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div>
-        </a><h2 class="location"></h2>
-    </nav>
-    <nav class="sidebar"><a class="sidebar-logo" href="../../blackjack/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div>
-        </a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../blackjack/index.html"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><button type="button" id="help-button" title="help">?</button><div id="settings-menu" tabindex="-1">
-                                <a href="../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../wheel.svg"></a></div>
-                        </div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src\main.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>main.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" href="../../normalize.css"><link rel="stylesheet" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" href="../../ayu.css" disabled><link rel="stylesheet" href="../../dark.css" disabled><link rel="stylesheet" href="../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../storage.js"></script><script defer src="../../source-script.js"></script><script defer src="../../source-files.js"></script><script defer src="../../main.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../blackjack/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../blackjack/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../blackjack/index.html"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
 <span id="2">2</span>
 <span id="3">3</span>
 <span id="4">4</span>
@@ -349,351 +343,384 @@
 <span id="343">343</span>
 <span id="344">344</span>
 <span id="345">345</span>
-</pre><pre class="rust"><code><span class="comment">//TODO: Now that hand and card structs are in place,</span>
-<span class="comment">//fix the print both hands method so that it prints the pretty display</span>
-<span class="comment">//Currently your hand is not printed after a hit which is a big bug.</span>
+<span id="346">346</span>
+<span id="347">347</span>
+<span id="348">348</span>
+<span id="349">349</span>
+<span id="350">350</span>
+<span id="351">351</span>
+<span id="352">352</span>
+<span id="353">353</span>
+<span id="354">354</span>
+<span id="355">355</span>
+<span id="356">356</span>
+<span id="357">357</span>
+<span id="358">358</span>
+<span id="359">359</span>
+<span id="360">360</span>
+<span id="361">361</span>
+<span id="362">362</span>
+</pre><pre class="rust"><code><span class="comment">/*
+    Program Name: blackjack
+    Author: Brandon Susini
+    Date: Fall 2023
+*/
+</span><span class="kw">use </span>std::io;
+<span class="kw">use </span>rand::{thread_rng, Rng};
+<span class="kw">use </span>std::fs;
+<span class="kw">use </span>std::collections::HashMap;
+<span class="doccomment">///Type alias refering to u8 for uniformity through program
+</span><span class="kw">type </span>Cardvalue = u8;
 
-
-<span class="comment">/*How will it work?
-Upon run, ask user if they are ready to play.
--&gt; y, start game
--&gt; n, quit game
-
-**Game play loop**
-Start by dealing a card to the house. Notify the user about this card.
-**Deal loop**
-Next, deal a card to the user.
-Check for a bust. **
--&gt; if there is a bust, notify the user they lost this hand.
-    -&gt; Ask if they would like to play again.
-    -&gt; If yes start from the beginning
--&gt; if there is no bust, prompt if they would like to hit or stay
-    -&gt;if stay, move to house loop.
-    -&gt;if hit, restart deal loop.
-**House loop**
-Deal cards to the house until they are above a certain value.
-if the house busts, the user wins
--&gt;prompt user if they would like to play again
-    -&gt;If y, restart game loop
-    -&gt;If n, quit application.
-END OF APPLICATION
-*/</span>
-
-<span class="comment">/* What architecture will we need?
-Cards can be represented as a number, suit pair. Predefined tuples or struct?
-The deck will be an array wrapped in a module.
--&gt; needs shuffle
--&gt; dealFrom
--&gt; display
-Hands can just be tuples or arrays?
--&gt; display
--&gt; clear
-*/</span>
-
-<span class="comment">//Make a file that will hold career wins, losses, and blackjacks</span>
-
-<span class="comment">//REMEMBER: because of crazy rust things 49 == 1 for debug mode</span>
-    <span class="comment">//50 == 2 for debug mode</span>
-<span class="kw">use</span> <span class="ident">std::io</span>;
-<span class="kw">use</span> <span class="ident">rand</span>::{<span class="ident">thread_rng</span>, <span class="ident">Rng</span>};
-<span class="doccomment">///Type alias refering to u8 for uniformity through program</span>
-<span class="kw">type</span> <span class="ident">Cardvalue</span> <span class="op">=</span> <span class="ident">u8</span>;
-
-<span class="doccomment">///Card struct that holds a cards value as well as its suit as a static string literal</span>
-<span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>,<span class="ident">Clone</span>)]</span>
-<span class="kw">struct</span> <span class="ident">Card</span>{
-    <span class="ident">value</span>: <span class="ident">Cardvalue</span>,
-    <span class="ident">name</span>: <span class="kw-2">&amp;</span><span class="lifetime">&#39;static</span> <span class="ident">str</span>,
-    <span class="ident">suit</span>: <span class="kw-2">&amp;</span><span class="lifetime">&#39;static</span> <span class="ident">str</span>,
+<span class="doccomment">///Card struct that holds a cards value as well as its suit as a static string literal
+</span><span class="attribute">#[derive(Debug,Clone)]
+</span><span class="kw">struct </span>Card{
+    value: Cardvalue,
+    name: <span class="kw-2">&amp;</span><span class="lifetime">&#39;static </span>str,
+    suit: <span class="kw-2">&amp;</span><span class="lifetime">&#39;static </span>str,
 }
-<span class="kw">impl</span> <span class="ident">Card</span>{
-    <span class="kw">fn</span> <span class="ident">get_card_name</span>(<span class="ident">value</span>:<span class="ident">Cardvalue</span>)-&gt; <span class="kw-2">&amp;</span><span class="lifetime">&#39;static</span> <span class="ident">str</span>{
-        <span class="kw">match</span> <span class="ident">value</span>{
-            <span class="number">1</span> =&gt; <span class="kw">return</span> <span class="string">&quot;Ace&quot;</span>,
-            <span class="number">2</span> =&gt; <span class="kw">return</span> <span class="string">&quot;2&quot;</span>,
-            <span class="number">3</span> =&gt; <span class="kw">return</span> <span class="string">&quot;3&quot;</span>,
-            <span class="number">4</span> =&gt; <span class="kw">return</span> <span class="string">&quot;4&quot;</span>,
-            <span class="number">5</span> =&gt; <span class="kw">return</span> <span class="string">&quot;5&quot;</span>,
-            <span class="number">6</span> =&gt; <span class="kw">return</span> <span class="string">&quot;6&quot;</span>,
-            <span class="number">7</span> =&gt; <span class="kw">return</span> <span class="string">&quot;7&quot;</span>,
-            <span class="number">8</span> =&gt; <span class="kw">return</span> <span class="string">&quot;8&quot;</span>,
-            <span class="number">9</span> =&gt; <span class="kw">return</span> <span class="string">&quot;9&quot;</span>,
-            <span class="number">10</span> =&gt; <span class="kw">return</span> <span class="string">&quot;10&quot;</span>,
-            <span class="number">11</span> =&gt; <span class="kw">return</span> <span class="string">&quot;Jack&quot;</span>,
-            <span class="number">12</span> =&gt; <span class="kw">return</span> <span class="string">&quot;Queen&quot;</span>,
-            <span class="number">13</span> =&gt; <span class="kw">return</span> <span class="string">&quot;King&quot;</span>,
-            <span class="kw">_</span>=&gt; <span class="kw">return</span> <span class="string">&quot;Number too high&quot;</span>,
+<span class="kw">impl </span>Card{
+    <span class="kw">fn </span>get_card_name(value:Cardvalue)-&gt; <span class="kw-2">&amp;</span><span class="lifetime">&#39;static </span>str{
+        <span class="kw">match </span>value{
+            <span class="number">1 </span>=&gt; <span class="kw">return </span><span class="string">&quot;Ace&quot;</span>,
+            <span class="number">2 </span>=&gt; <span class="kw">return </span><span class="string">&quot;2&quot;</span>,
+            <span class="number">3 </span>=&gt; <span class="kw">return </span><span class="string">&quot;3&quot;</span>,
+            <span class="number">4 </span>=&gt; <span class="kw">return </span><span class="string">&quot;4&quot;</span>,
+            <span class="number">5 </span>=&gt; <span class="kw">return </span><span class="string">&quot;5&quot;</span>,
+            <span class="number">6 </span>=&gt; <span class="kw">return </span><span class="string">&quot;6&quot;</span>,
+            <span class="number">7 </span>=&gt; <span class="kw">return </span><span class="string">&quot;7&quot;</span>,
+            <span class="number">8 </span>=&gt; <span class="kw">return </span><span class="string">&quot;8&quot;</span>,
+            <span class="number">9 </span>=&gt; <span class="kw">return </span><span class="string">&quot;9&quot;</span>,
+            <span class="number">10 </span>=&gt; <span class="kw">return </span><span class="string">&quot;10&quot;</span>,
+            <span class="number">11 </span>=&gt; <span class="kw">return </span><span class="string">&quot;Jack&quot;</span>,
+            <span class="number">12 </span>=&gt; <span class="kw">return </span><span class="string">&quot;Queen&quot;</span>,
+            <span class="number">13 </span>=&gt; <span class="kw">return </span><span class="string">&quot;King&quot;</span>,
+            <span class="kw">_</span>=&gt; <span class="kw">return </span><span class="string">&quot;Number too high&quot;</span>,
         }
     }
-    <span class="kw">fn</span> <span class="ident">print_card</span>(<span class="kw-2">&amp;</span><span class="self">self</span>){
-        <span class="macro">println!</span>(<span class="string">&quot;{} of {}&quot;</span>, <span class="self">self</span>.<span class="ident">name</span>, <span class="self">self</span>.<span class="ident">suit</span>);
+    <span class="kw">fn </span>get_card_string(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; String{
+        <span class="macro">format!</span>(<span class="string">&quot;{} of {}&quot;</span>, <span class="self">self</span>.name, <span class="self">self</span>.suit)
     }
 }
-<span class="doccomment">///Hand struct that contains a vector of Card structs</span>
-<span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>,<span class="ident">Clone</span>)]</span>
-<span class="kw">struct</span> <span class="ident">Hand</span>{
-    <span class="ident">cards</span>: <span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">Card</span><span class="op">&gt;</span>,
+<span class="doccomment">///Hand struct that contains a vector of Card structs
+</span><span class="attribute">#[derive(Debug,Clone)]
+</span><span class="kw">struct </span>Hand{
+    owner: String,
+    cards: Vec&lt;Card&gt;,
 }
-<span class="doccomment">///Implementations for the Hand struct</span>
-<span class="kw">impl</span> <span class="ident">Hand</span>{
-    <span class="doccomment">///Iterates through all cards in a Hand and returns the sum of the values.</span>
-    <span class="kw">fn</span> <span class="ident">calculate_total</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <span class="ident">Cardvalue</span>{
-        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">sum</span>:<span class="ident">Cardvalue</span> <span class="op">=</span> <span class="number">0</span>;
-        <span class="kw">for</span> <span class="ident">x</span> <span class="kw">in</span> <span class="self">self</span>.<span class="ident">cards</span>.<span class="ident">iter</span>(){
-            <span class="ident">sum</span> <span class="op">+</span><span class="op">=</span> <span class="ident">x</span>.<span class="ident">value</span>;
+<span class="doccomment">///Implementations for the Hand struct
+</span><span class="kw">impl </span>Hand{
+    <span class="kw">fn </span>new(name:<span class="kw-2">&amp;</span>str) -&gt; Hand{
+        Hand{
+            owner:name.to_string(),
+            cards: Vec::new()
         }
-        <span class="kw">return</span> <span class="ident">sum</span>;
     }
-    <span class="doccomment">///Takes a Card and adds it to the Hand&#39;s current vector of Cards.</span>
-    <span class="kw">fn</span> <span class="ident">add_card</span>(<span class="kw-2">&amp;mut</span> <span class="self">self</span>, <span class="ident">card</span>: <span class="ident">Card</span>){
-        <span class="self">self</span>.<span class="ident">cards</span>.<span class="ident">push</span>(<span class="ident">card</span>);
-    }
-    <span class="doccomment">///Prints information about the cards held in the Hand card by card.</span>
-    <span class="kw">fn</span> <span class="ident">print_hand</span>(<span class="kw-2">&amp;</span><span class="self">self</span>){
-        <span class="kw">for</span> (<span class="ident">x</span>,<span class="ident">card</span>) <span class="kw">in</span> <span class="self">self</span>.<span class="ident">cards</span>.<span class="ident">iter</span>().<span class="ident">enumerate</span>(){
-            <span class="macro">println!</span>(<span class="string">&quot;Card {}, {} of {}&quot;</span>,<span class="ident">x</span>,<span class="ident">card</span>.<span class="ident">value</span>, <span class="ident">card</span>.<span class="ident">suit</span>);
+    <span class="doccomment">///Iterates through all cards in a Hand and returns the sum of the values.
+    </span><span class="kw">fn </span>calculate_total(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; Cardvalue{
+        <span class="kw">let </span><span class="kw-2">mut </span>sum:Cardvalue = <span class="number">0</span>;
+        <span class="kw">for </span>x <span class="kw">in </span><span class="self">self</span>.cards.iter(){
+            <span class="kw">if </span>x.name == <span class="string">&quot;Ace&quot; </span>&amp;&amp; sum + <span class="number">11 </span>&lt;= <span class="number">21</span>{
+                sum += <span class="number">11</span>;
+            }<span class="kw">else if </span>x.name == <span class="string">&quot;Ace&quot; </span>&amp;&amp; sum + <span class="number">11 </span>&gt;<span class="number">21</span>{
+                sum += x.value;
+            }<span class="kw">else</span>{
+                sum += x.value;
+            }
         }
+        <span class="kw">return </span>sum;
+    }
+    <span class="doccomment">///Takes a Card and adds it to the Hand&#39;s current vector of Cards.
+    </span><span class="kw">fn </span>add_card(<span class="kw-2">&amp;mut </span><span class="self">self</span>, card: Card){
+        <span class="self">self</span>.cards.push(card);
+    }
+    <span class="doccomment">///Prints information about the cards held in the Hand card by card.
+    </span><span class="kw">fn </span>print_hand(<span class="kw-2">&amp;</span><span class="self">self</span>){
+        <span class="macro">println!</span>(<span class="string">&quot;==============&quot;</span>);
+        <span class="macro">println!</span>(<span class="string">&quot;| *{}&#39;s Hand:&quot;</span>,<span class="self">self</span>.owner);
+        <span class="kw">for </span>(x,card) <span class="kw">in </span><span class="self">self</span>.cards.iter().enumerate(){
+            <span class="macro">println!</span>(<span class="string">&quot;| Card {}, \t{} of {}&quot;</span>,x+<span class="number">1</span>,card.value, card.suit);
+        }
+        <span class="macro">println!</span>(<span class="string">&quot;==============&quot;</span>);
     }
     
 }
+<span class="doccomment">///Retrieves an argument passed in at the command line to dictate the debug mode the program should be run in
+/// 
+/// 0 (or no input) means no debug messages will be printed
+/// 1 means debug messages will be printed.
+</span><span class="kw">fn </span>get_debug_mode()-&gt;u8{
+    DEBUG_MODE.with(|value|{
+        <span class="kw">if </span>!(value.as_ref() == <span class="prelude-val">None</span>){
+            <span class="kw">return </span>value.as_ref().unwrap().as_str().as_bytes()[<span class="number">0</span>] - <span class="number">48
+        </span>}<span class="kw">else</span>{
+            <span class="kw">return </span><span class="number">0</span>;
+        }
+    })
+}
+<span class="macro">thread_local!</span>(<span class="kw">static </span>DEBUG_MODE: <span class="prelude-ty">Option</span>&lt;String&gt; = std::env::args().skip(<span class="number">1</span>).next(););
+<span class="doccomment">///Returns the value stored in a hashmap for a given key.
+/// Hashmap must be set up to have keys as String objects and values as u8&#39;s
+</span><span class="kw">fn </span>get_map_value(key: <span class="kw-2">&amp;</span>str, map: <span class="kw-2">&amp;mut </span>HashMap&lt;String,u8&gt;) -&gt;u8{
+    <span class="kw">return </span>map.get(<span class="kw-2">&amp;</span>String::from(key)).copied().unwrap();
+}
 
-<span class="macro">thread_local!</span>(<span class="kw">static</span> <span class="ident">DEBUG_MODE</span>: <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">String</span><span class="op">&gt;</span> <span class="op">=</span> <span class="ident">std::env::args</span>().<span class="ident">skip</span>(<span class="number">1</span>).<span class="ident">next</span>(););
-<span class="doccomment">///Acts as a driver that runs the game loop function to create an endless loop</span>
-<span class="doccomment">/// </span>
-<span class="doccomment">/// Loops while bool variable replay is true. Replay will be set to false in other areas</span>
-<span class="doccomment">/// of the program to signal the user wanting to quit.</span>
-<span class="doccomment">/// </span>
-<span class="doccomment">/// Once replay is set to false, the loop exits and a leaving message is displayed.</span>
-<span class="kw">fn</span> <span class="ident">main</span>() {
-    <span class="comment">//DEBUG_MODE.with(||{println!(&quot;{}&quot;,)};</span>
-    <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">replay</span> <span class="op">=</span> <span class="bool-val">true</span>;
-    <span class="kw">while</span> <span class="ident">replay</span> {
-        <span class="ident">game_body</span>(<span class="kw-2">&amp;mut</span> <span class="ident">replay</span>);
+<span class="doccomment">///Loads all the stats from stats.txt into two different Vectors
+/// Produces data variable of type Vec&lt;u8&gt;
+/// and
+/// Produces data_desc variable of type Vec&lt;String&gt;
+/// data -&gt; Actual values of the stored stats
+/// data_desc -&gt; String to identify what type of value is being loaded.
+</span><span class="kw">fn </span>load_stats() -&gt; HashMap&lt;String,u8&gt;{
+    <span class="comment">//Pattern to use when splitting input
+    </span><span class="kw">let </span>split_pattern:<span class="kw-2">&amp;</span>str = <span class="string">&quot;: &quot;</span>;
+    <span class="comment">//String contents of file
+    </span><span class="kw">let </span>contents = fs::read_to_string(<span class="string">&quot;stats.txt&quot;</span>).unwrap();
+    <span class="comment">//Vector to hold data values
+    //let mut data:Vec&lt;u8&gt; = Vec::new();
+    //Vector to hold which data field description
+    //let mut data_desc:Vec&lt;String&gt; = Vec::new();
+    //Loop to unpack contents line by line and populate values into data and fields into data_desc
+    </span><span class="kw">let </span><span class="kw-2">mut </span>map = HashMap::&lt;String, u8&gt;::new();
+    <span class="kw">for </span>line <span class="kw">in </span>contents.lines(){
+        <span class="kw">let </span>split_line: Vec&lt;String&gt; = line.to_string().split(split_pattern).map(String::from).collect::&lt;Vec&lt;String&gt;&gt;();
+        <span class="comment">//println!(&quot;{:?}&quot;,&quot;Hello there&quot;.find(&quot;ta&quot;));
+        //data_desc.push(split_line[0].clone());
+        //data.push(split_line[1].parse().unwrap());
+        </span>map.insert(split_line[<span class="number">0</span>].clone(),split_line[<span class="number">1</span>].parse().unwrap());
+    }
+    map.clone()
+}
+<span class="doccomment">///Acts as a driver that runs the game loop function to create an endless loop
+/// 
+/// Loops while bool variable replay is true. Replay will be set to false in other areas
+/// of the program to signal the user wanting to quit.
+/// 
+/// Once replay is set to false, the loop exits and a leaving message is displayed.
+</span><span class="kw">fn </span>main() {
+    <span class="comment">//DEBUG_MODE.with(||{println!(&quot;{}&quot;,)};
+    </span><span class="kw">let </span><span class="kw-2">mut </span>replay = <span class="bool-val">true</span>;
+    <span class="comment">//Exists for the lifetime of the program.
+    //Pass this into gamebody.
+    </span><span class="kw">let </span><span class="kw-2">mut </span>loaded_values = load_stats();
+    <span class="comment">//println!(&quot;{:?}&quot;, loaded_values.entry(&quot;Player wins&quot;.to_string()).and_modify(|val| *val+=1).or_insert(0));
+    </span><span class="kw">while </span>replay {
+        game_body(<span class="kw-2">&amp;mut </span>replay, <span class="kw-2">&amp;mut </span>loaded_values);
     }
     <span class="macro">println!</span>(<span class="string">&quot;Thanks for playing!&quot;</span>);
     
 }
-<span class="doccomment">///Retrieves an argument passed in at the command line to dictate the debug mode the program should be run in</span>
-<span class="doccomment">/// </span>
-<span class="doccomment">/// 0 (or no input) means no debug messages will be printed</span>
-<span class="doccomment">/// 1 means debug messages will be printed.</span>
-<span class="kw">fn</span> <span class="ident">get_debug_mode</span>()-&gt;<span class="ident">u8</span>{
-    <span class="ident">DEBUG_MODE</span>.<span class="ident">with</span>(<span class="op">|</span><span class="ident">value</span><span class="op">|</span>{
-        <span class="kw">if</span> <span class="op">!</span>(<span class="ident">value</span>.<span class="ident">as_ref</span>() <span class="op">==</span> <span class="prelude-val">None</span>){
-            <span class="kw">return</span> <span class="ident">value</span>.<span class="ident">as_ref</span>().<span class="ident">unwrap</span>().<span class="ident">as_str</span>().<span class="ident">as_bytes</span>()[<span class="number">0</span>] <span class="op">-</span> <span class="number">48</span>
-        }<span class="kw">else</span>{
-            <span class="kw">return</span> <span class="number">0</span>;
-        }
-    })
+<span class="kw">fn </span>print_type_of&lt;T&gt;(<span class="kw">_</span>:<span class="kw-2">&amp;</span>T){
+    <span class="macro">println!</span>(<span class="string">&quot;{}&quot;</span>,std::any::type_name::&lt;T&gt;());
 }
-<span class="comment">/*
-Take input should get input from the user
-and ensure that the input is good based on the expected_answers Vector
-
-An internal loop does not break until an acceptable input was given.
-*/</span>
-<span class="doccomment">///Retrieve input from the user after the program has started. This is called whenever input from the user is necessary.</span>
-<span class="doccomment">/// </span>
-<span class="doccomment">/// Arguments:</span>
-<span class="doccomment">/// * expected_answers: &amp;Vec&lt;char&gt;. Vector of characters that take_input will accept as valid input.</span>
-<span class="doccomment">/// * prompt: &amp;str. Message to be displayed to the user each time input is attempted.</span>
-<span class="doccomment">/// </span>
-<span class="doccomment">/// Returns:</span>
-<span class="doccomment">/// * char. User&#39;s chosen option to be used by the calling function.</span>
-<span class="kw">fn</span> <span class="ident">take_input</span>(<span class="ident">expected_answers</span>: <span class="kw-2">&amp;</span><span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">char</span><span class="op">&gt;</span>,<span class="ident">prompt</span>:<span class="kw-2">&amp;</span><span class="ident">str</span>)-&gt;<span class="ident">char</span>{
+<span class="doccomment">///Retrieve input from the user after the program has started. This is called whenever input from the user is necessary.
+/// 
+/// Arguments:
+/// * expected_answers: &amp;Vec&lt;char&gt;. Vector of characters that take_input will accept as valid input.
+/// * prompt: &amp;str. Message to be displayed to the user each time input is attempted.
+/// 
+/// Returns:
+/// * char. User&#39;s chosen option to be used by the calling function.
+</span><span class="kw">fn </span>take_input(expected_answers: <span class="kw-2">&amp;</span>Vec&lt;char&gt;,prompt:<span class="kw-2">&amp;</span>str)-&gt;char{
     <span class="kw">loop</span>{
-        <span class="comment">//Declare new mutable string object for use in read_line</span>
-        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">buffer</span> <span class="op">=</span> <span class="ident">String::new</span>();
-        <span class="comment">//Print the prompt message with expected inputs</span>
-        <span class="macro">println!</span>(<span class="string">&quot;{}, or (q) to quit.&quot;</span>,<span class="ident">prompt</span>);
-        <span class="comment">//Assign user input to buffer string</span>
-        <span class="kw">match</span> <span class="ident">io::stdin</span>().<span class="ident">read_line</span>(<span class="kw-2">&amp;mut</span> <span class="ident">buffer</span>){
-            <span class="prelude-val">Ok</span>(<span class="ident">n</span>) =&gt; <span class="ident">n</span>,
-            <span class="prelude-val">Err</span>(<span class="ident">err</span>) =&gt; <span class="macro">panic!</span>(<span class="string">&quot;{}&quot;</span>, <span class="ident">err</span>),
+        <span class="comment">//Declare new mutable string object for use in read_line
+        </span><span class="kw">let </span><span class="kw-2">mut </span>buffer = String::new();
+        <span class="comment">//Print the prompt message with expected inputs
+        </span><span class="macro">println!</span>(<span class="string">&quot;{}, or (q) to quit.&quot;</span>,prompt);
+        <span class="comment">//Assign user input to buffer string
+        </span><span class="kw">match </span>io::stdin().read_line(<span class="kw-2">&amp;mut </span>buffer){
+            <span class="prelude-val">Ok</span>(n) =&gt; n,
+            <span class="prelude-val">Err</span>(err) =&gt; <span class="macro">panic!</span>(<span class="string">&quot;{}&quot;</span>, err),
         };
-        <span class="comment">//Trim whitespace and newlines from buffer</span>
-        <span class="ident">buffer</span> <span class="op">=</span> <span class="ident">buffer</span>.<span class="ident">trim</span>().<span class="ident">to_string</span>();
-        <span class="comment">//extract the first character from user input</span>
-        <span class="kw">if</span> <span class="ident">buffer</span>.<span class="ident">len</span>() <span class="op">&lt;</span><span class="op">=</span><span class="number">0</span>{
+        <span class="comment">//Trim whitespace and newlines from buffer
+        </span>buffer = buffer.trim().to_string();
+        <span class="comment">//extract the first character from user input
+        </span><span class="kw">if </span>buffer.len() &lt;=<span class="number">0</span>{
             <span class="macro">println!</span>(<span class="string">&quot;Bad input recieved&quot;</span>);
             <span class="kw">continue</span>;
         }
-        <span class="kw">let</span> <span class="ident">c</span>: <span class="ident">char</span> <span class="op">=</span> <span class="ident">buffer</span>.<span class="ident">chars</span>().<span class="ident">collect</span>::<span class="op">&lt;</span><span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">char</span><span class="op">&gt;</span><span class="op">&gt;</span>()[<span class="number">0</span>];
-        <span class="comment">//Check user input against all expected inputs</span>
-        <span class="kw">if</span> <span class="ident">c</span> <span class="op">==</span> <span class="string">&#39;q&#39;</span>{
+        <span class="kw">let </span>c: char = buffer.chars().collect::&lt;Vec&lt;char&gt;&gt;()[<span class="number">0</span>];
+        <span class="comment">//Check user input against all expected inputs
+        </span><span class="kw">if </span>c == <span class="string">&#39;q&#39;</span>{
             <span class="macro">panic!</span>(<span class="string">&quot;Thanks for playing!&quot;</span>);
         }
-        <span class="kw">if</span> <span class="ident">expected_answers</span>.<span class="ident">contains</span>(<span class="kw-2">&amp;</span><span class="ident">c</span>){
-            <span class="comment">//If input is good, return to calling function with user selection.</span>
-            <span class="kw">return</span> <span class="ident">c</span>;
+        <span class="kw">if </span>expected_answers.contains(<span class="kw-2">&amp;</span>c){
+            <span class="comment">//If input is good, return to calling function with user selection.
+            </span><span class="kw">return </span>c;
         }<span class="kw">else</span>{
-            <span class="comment">//If input is bad, continue looping until good input.</span>
-            <span class="macro">println!</span>(<span class="string">&quot;Bad input recieved&quot;</span>);
+            <span class="comment">//If input is bad, continue looping until good input.
+            </span><span class="macro">println!</span>(<span class="string">&quot;Bad input recieved&quot;</span>);
             <span class="kw">continue</span>;
-        }<span class="comment">//end of expected_answers if</span>
-    }<span class="comment">//end of input loop</span>
-}<span class="comment">//end of take_input</span>
+        }<span class="comment">//end of expected_answers if
+    </span>}<span class="comment">//end of input loop
+</span>}<span class="comment">//end of take_input
 
-<span class="doccomment">///Main gameplay loop that houses logic for the game.</span>
-<span class="doccomment">/// </span>
-<span class="doccomment">/// Arguments:</span>
-<span class="doccomment">/// * replay: &amp;mut bool. Boolean value that reports wether or not the user would like to play again</span>
-<span class="doccomment">/// once game hand is finished.</span>
-<span class="kw">fn</span> <span class="ident">game_body</span>(<span class="ident">replay</span>: <span class="kw-2">&amp;mut</span> <span class="ident">bool</span>){
-    <span class="comment">//initialize variables and such</span>
-    <span class="macro">println!</span>(<span class="string">&quot;Welcome to blackjack! Press (q) at any time to quit&quot;</span>);
+</span><span class="doccomment">///Main gameplay loop that houses logic for the game.
+/// 
+/// Arguments:
+/// * replay: &amp;mut bool. Boolean value that reports wether or not the user would like to play again
+/// once game hand is finished.
+</span><span class="kw">fn </span>game_body(replay: <span class="kw-2">&amp;mut </span>bool, stats: <span class="kw-2">&amp;mut </span>HashMap&lt;String,u8&gt;){
+    <span class="comment">//initialize variables and such
+    </span><span class="macro">println!</span>(<span class="string">&quot;Welcome to blackjack! Press (q) at any time to quit&quot;</span>);
     
-    <span class="ident">take_input</span>(<span class="kw-2">&amp;</span><span class="macro">vec!</span>[<span class="string">&#39;r&#39;</span>], <span class="string">&quot;Press (r) to begin!&quot;</span>);
+    take_input(<span class="kw-2">&amp;</span><span class="macro">vec!</span>[<span class="string">&#39;r&#39;</span>], <span class="string">&quot;Press (r) to begin!&quot;</span>);
     
-    <span class="comment">//Game starts, dealer gets 1 card, then user gets to take their entire turn.</span>
-    <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">dealer_hand</span>: <span class="ident">Hand</span> <span class="op">=</span> <span class="ident">Hand</span>{<span class="ident">cards</span>: <span class="ident">Vec</span>::<span class="op">&lt;</span><span class="ident">Card</span><span class="op">&gt;</span><span class="ident">::new</span>()};
-    <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">player_hand</span>: <span class="ident">Hand</span> <span class="op">=</span> <span class="ident">Hand</span>{<span class="ident">cards</span>: <span class="ident">Vec</span>::<span class="op">&lt;</span><span class="ident">Card</span><span class="op">&gt;</span><span class="ident">::new</span>()};
-    <span class="ident">dealer_hand</span>.<span class="ident">add_card</span>(<span class="ident">get_random_card</span>());
+    <span class="comment">//Game starts, dealer gets 1 card, then user gets to take their entire turn.
+    </span><span class="kw">let </span><span class="kw-2">mut </span>dealer_hand: Hand = Hand::new(<span class="string">&quot;Dealer&quot;</span>);
+    <span class="kw">let </span><span class="kw-2">mut </span>player_hand: Hand = Hand::new(<span class="string">&quot;Player&quot;</span>);
+    dealer_hand.add_card(get_random_card());
     <span class="macro">println!</span>(<span class="string">&quot;Dealing the dealers hand.&quot;</span>);
-    <span class="ident">dealer_hand</span>.<span class="ident">print_hand</span>();
-    <span class="ident">player_hand</span>.<span class="ident">add_card</span>(<span class="ident">get_random_card</span>());
-    <span class="ident">player_hand</span>.<span class="ident">add_card</span>(<span class="ident">get_random_card</span>());
+    dealer_hand.print_hand();
+    player_hand.add_card(get_random_card());
+    player_hand.add_card(get_random_card());
     <span class="macro">println!</span>(<span class="string">&quot;Dealing your hand.&quot;</span>);
-    <span class="ident">player_hand</span>.<span class="ident">print_hand</span>();
-    <span class="comment">//Player control. Hit or stay</span>
-    <span class="kw">loop</span>{
-        <span class="kw">let</span> <span class="ident">answer</span>: <span class="ident">char</span> <span class="op">=</span> <span class="ident">take_input</span>(<span class="kw-2">&amp;</span><span class="macro">vec!</span>[<span class="string">&#39;h&#39;</span>,<span class="string">&#39;s&#39;</span>], <span class="string">&quot;Would you like to (h) hit or (s) stay?&quot;</span>);
-        <span class="kw">if</span> <span class="ident">answer</span> <span class="op">==</span> <span class="string">&#39;h&#39;</span>{
-            <span class="comment">//hit</span>
-            <span class="kw">let</span> <span class="ident">new_card</span> <span class="op">=</span> <span class="ident">get_random_card</span>();
-            <span class="ident">new_card</span>.<span class="ident">print_card</span>();
-            <span class="ident">player_hand</span>.<span class="ident">add_card</span>(<span class="ident">new_card</span>);
-            <span class="ident">player_hand</span>.<span class="ident">print_hand</span>();
-            <span class="comment">//THIS IS WHERE PRINT BOTH HANDS GOES</span>
-            <span class="kw">if</span> <span class="ident">player_hand</span>.<span class="ident">calculate_total</span>() <span class="op">&gt;</span> <span class="number">21</span> {
+    player_hand.print_hand();
+    <span class="comment">//Player control. Hit or stay
+    </span><span class="kw">loop</span>{
+        <span class="kw">let </span>answer: char = take_input(<span class="kw-2">&amp;</span><span class="macro">vec!</span>[<span class="string">&#39;h&#39;</span>,<span class="string">&#39;s&#39;</span>], <span class="string">&quot;Would you like to (h) hit or (s) stay?&quot;</span>);
+        <span class="kw">if </span>answer == <span class="string">&#39;h&#39;</span>{
+            <span class="comment">//hit
+            </span><span class="kw">let </span>new_card = get_random_card();
+            <span class="macro">println!</span>(<span class="string">&quot;Dealt card: {}&quot;</span>,new_card.get_card_string());
+            player_hand.add_card(new_card);
+            player_hand.print_hand();
+            <span class="comment">//THIS IS WHERE PRINT BOTH HANDS GOES
+            </span><span class="kw">if </span>player_hand.calculate_total() &gt; <span class="number">21 </span>{
                 <span class="macro">println!</span>(<span class="string">&quot;Bust!&quot;</span>);
-                <span class="kw-2">*</span><span class="ident">replay</span> <span class="op">=</span> <span class="ident">play_again</span>();
+                <span class="kw-2">*</span>replay = play_again();
                 <span class="kw">return</span>;
             }
         }<span class="kw">else</span>{
-            <span class="comment">//stay</span>
-            <span class="comment">//Dealers turn. Implement &quot;AI&quot; for dealer turn.</span>
-            <span class="comment">//For now just see who&#39;s total is bigger without being over.</span>
-            <span class="comment">//Theres your winner.</span>
-            <span class="macro">println!</span>(<span class="string">&quot;Dealing card to the dealer.&quot;</span>);
-            <span class="kw">let</span> <span class="ident">new_card</span> <span class="op">=</span> <span class="ident">get_random_card</span>();
-            <span class="ident">new_card</span>.<span class="ident">print_card</span>();
-            <span class="ident">dealer_hand</span>.<span class="ident">add_card</span>(<span class="ident">new_card</span>);
-            <span class="kw">let</span> <span class="ident">p_total</span>:<span class="ident">Cardvalue</span> <span class="op">=</span> <span class="ident">player_hand</span>.<span class="ident">calculate_total</span>();
-            <span class="kw">let</span> <span class="ident">d_total</span>:<span class="ident">Cardvalue</span> <span class="op">=</span> <span class="ident">dealer_hand</span>.<span class="ident">calculate_total</span>();
-            <span class="kw">if</span> <span class="ident">p_total</span> <span class="op">&gt;</span> <span class="ident">d_total</span>{
-                <span class="macro">println!</span>(<span class="string">&quot;You win!&quot;</span>);
-            }<span class="kw">else</span> <span class="kw">if</span> <span class="ident">p_total</span> <span class="op">==</span> <span class="ident">d_total</span> {
-                <span class="macro">println!</span>(<span class="string">&quot;Tie game!&quot;</span>);
+            <span class="comment">//stay
+            //Dealers turn. Implement &quot;AI&quot; for dealer turn.
+            //For now just see who&#39;s total is bigger without being over.
+            //Theres your winner.
+            </span><span class="macro">println!</span>(<span class="string">&quot;Dealing card to the dealer.&quot;</span>);
+            <span class="kw">let </span>new_card = get_random_card();
+            <span class="macro">println!</span>(<span class="string">&quot;Dealt card: {}&quot;</span>,new_card.get_card_string());
+            dealer_hand.add_card(new_card);
+            <span class="kw">let </span>p_total:Cardvalue = player_hand.calculate_total();
+            <span class="kw">let </span>d_total:Cardvalue = dealer_hand.calculate_total();
+            <span class="kw">if </span>p_total &gt; d_total{        
+                
+                player_win(<span class="kw-2">&amp;</span>p_total, stats);
+            }<span class="kw">else if </span>p_total == d_total {
+                
+                tie(<span class="kw-2">&amp;</span>p_total, <span class="kw-2">&amp;</span>d_total,stats);
             }<span class="kw">else</span>{
-                <span class="macro">println!</span>(<span class="string">&quot;You lose!&quot;</span>);
+                
+                dealer_win(<span class="kw-2">&amp;</span>d_total,stats);
             }
-            <span class="kw-2">*</span><span class="ident">replay</span> <span class="op">=</span> <span class="ident">play_again</span>();
+            stats.entry(String::from(<span class="string">&quot;Total games&quot;</span>)).and_modify(|val| <span class="kw-2">*</span>val+=<span class="number">1</span>);
+            <span class="kw-2">*</span>replay = play_again();
             <span class="kw">return</span>;
         }
     }
 }
-<span class="doccomment">///Asks user if they would like to play again and returns true or false.</span>
-<span class="doccomment">/// </span>
-<span class="doccomment">/// Returns:</span>
-<span class="doccomment">/// * Boolean indicating whether or not to play another hand.</span>
-<span class="kw">fn</span> <span class="ident">play_again</span>() -&gt; <span class="ident">bool</span>{
-    <span class="kw">let</span> <span class="ident">answer</span> <span class="op">=</span> <span class="ident">take_input</span>(<span class="kw-2">&amp;</span><span class="macro">vec!</span>[<span class="string">&#39;y&#39;</span>,<span class="string">&#39;n&#39;</span>],<span class="string">&quot;Play again? (y) or (n)&quot;</span>);
-    <span class="kw">if</span> <span class="ident">answer</span> <span class="op">==</span> <span class="string">&#39;y&#39;</span>{
-        <span class="bool-val">true</span>
-    }<span class="kw">else</span>{
-        <span class="bool-val">false</span>
+<span class="doccomment">///Asks user if they would like to play again and returns true or false.
+/// 
+/// Returns:
+/// * Boolean indicating whether or not to play another hand.
+</span><span class="kw">fn </span>play_again() -&gt; bool{
+    <span class="kw">let </span>answer = take_input(<span class="kw-2">&amp;</span><span class="macro">vec!</span>[<span class="string">&#39;y&#39;</span>,<span class="string">&#39;n&#39;</span>],<span class="string">&quot;Play again? (y) or (n)&quot;</span>);
+    <span class="kw">if </span>answer == <span class="string">&#39;y&#39;</span>{
+        <span class="bool-val">true
+    </span>}<span class="kw">else</span>{
+        <span class="bool-val">false
+    </span>}
+}
+<span class="kw">fn </span>player_win(p_total:<span class="kw-2">&amp;</span>u8,stats:<span class="kw-2">&amp;mut </span>HashMap&lt;String,u8&gt;){
+    <span class="macro">println!</span>(<span class="string">&quot;You win!&quot;</span>);        
+    stats.entry(String::from(<span class="string">&quot;Player wins&quot;</span>)).and_modify(|val| <span class="kw-2">*</span>val+=<span class="number">1</span>);
+    <span class="kw">if </span><span class="kw-2">*</span>p_total == <span class="number">21</span>{
+        <span class="macro">println!</span>(<span class="string">&quot;\tWith a BlackJack!!&quot;</span>);
+        stats.entry(String::from(<span class="string">&quot;Player Blackjacks&quot;</span>)).and_modify(|val| <span class="kw-2">*</span>val += <span class="number">1</span>);
     }
 }
-<span class="doccomment">///Prints the contents of both hands given in a more readable and &quot;game friendly&quot; format.</span>
-<span class="doccomment">///  **Currently being reworked to support Hand and Card structs.**</span>
-<span class="doccomment">///</span>
-<span class="doccomment">/// Arguments:</span>
-<span class="doccomment">/// * player_hand: &amp;Vec&lt;Cardvalue&gt; Players hand</span>
-<span class="doccomment">/// * dealer_hand: &amp;Vec&lt;Cardvalue&gt; Dealers hand</span>
-<span class="kw">fn</span> <span class="ident">print_both_hands</span>(<span class="ident">player_hand</span>: <span class="kw-2">&amp;</span><span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">Cardvalue</span><span class="op">&gt;</span>,<span class="ident">dealer_hand</span>: <span class="kw-2">&amp;</span><span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">Cardvalue</span><span class="op">&gt;</span>){
-    <span class="comment">//let player_iter = player_hand.iter();</span>
-    <span class="comment">//let dealer_iter = dealer_hand.iter();</span>
-    <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">larger_hand</span> <span class="op">=</span> <span class="ident">Vec</span>::<span class="op">&lt;</span><span class="ident">u8</span><span class="op">&gt;</span><span class="ident">::new</span>();
-    <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">other_hand</span> <span class="op">=</span> <span class="ident">Vec</span>::<span class="op">&lt;</span><span class="ident">u8</span><span class="op">&gt;</span><span class="ident">::new</span>();
-    <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">size</span>:<span class="ident">usize</span> <span class="op">=</span> <span class="number">0</span>;
-    <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">hand_info</span>:<span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">String</span><span class="op">&gt;</span> <span class="op">=</span> <span class="ident">Vec::new</span>();
-    <span class="comment">//Populate hand_info with player_hand first, then dealer_hand.</span>
-    <span class="kw">for</span> <span class="ident">x</span> <span class="kw">in</span> <span class="ident">player_hand</span>.<span class="ident">iter</span>(){
-        <span class="ident">hand_info</span>.<span class="ident">push</span>(<span class="macro">format!</span>(<span class="string">&quot;{} of {}&quot;</span>,<span class="ident">x</span>, <span class="string">&quot;Spades&quot;</span>));
+<span class="kw">fn </span>dealer_win(d_total:<span class="kw-2">&amp;</span>u8,stats:<span class="kw-2">&amp;mut </span>HashMap&lt;String,u8&gt;){
+    <span class="macro">println!</span>(<span class="string">&quot;Dealer Wins!&quot;</span>);
+    stats.entry(String::from(<span class="string">&quot;Dealer wins&quot;</span>)).and_modify(|val| <span class="kw-2">*</span>val+=<span class="number">1</span>);
+    <span class="kw">if </span><span class="kw-2">*</span>d_total == <span class="number">21</span>{
+        <span class="macro">println!</span>(<span class="string">&quot;\tWith a BlackJack!!&quot;</span>);
+        stats.entry(String::from(<span class="string">&quot;Dealer Blackjacks&quot;</span>)).and_modify(|val| <span class="kw-2">*</span>val += <span class="number">1</span>);
     }
-    <span class="comment">//We got um bois</span>
-    <span class="kw">for</span> <span class="ident">y</span> <span class="kw">in</span> <span class="ident">hand_info</span>.<span class="ident">iter_mut</span>(){
-        <span class="macro">println!</span>(<span class="string">&quot;{}&quot;</span>,<span class="ident">y</span>);
-    }
-    <span class="comment">/* if player_hand.len() &gt;= dealer_hand.len(){
-        size = player_hand.len();
-        larger_hand = player_hand.clone();
-        other_hand = dealer_hand.clone();
-    }else{
-        size = dealer_hand.len();
-        larger_hand = dealer_hand.clone();
-        other_hand = player_hand.clone();
-    };
-    for x in 0..size{
-        //println!(&quot;Card {}, {:?} of {:?} \t\t Card {}, {:?} of {:?}&quot;,
-                //x, player_hand.get(x).unwrap_or(&quot;&quot;),&quot;Spades&quot;,x,dealer_hand.get(x).unwrap_or(&quot;&quot;),&quot;Spades&quot;);
-        
-        if other_hand.get(x) != None{
-                println!(&quot;Card {}, {:?} of {:?} \t\tCard {}, {:?} of {:?}&quot;,
-                x, larger_hand.get(x).unwrap() + 1,&quot;Spades&quot;,x,other_hand.get(x).unwrap() +1,&quot;Spades&quot;);
-        }else{
-            println!(&quot;Card {}, {:?} of {:?} \t\t------------------------&quot;,
-                x, larger_hand.get(x).unwrap() +1,&quot;Spades&quot;);
-        }
-    } */</span>
-    <span class="comment">//I could turn hand into a struct that has a method that will return</span>
-    <span class="comment">//an element at that index if it exists or return &quot;&quot; if not.</span>
 }
+<span class="kw">fn </span>tie(p_total:<span class="kw-2">&amp;</span>u8,d_total:<span class="kw-2">&amp;</span>u8,stats:<span class="kw-2">&amp;mut </span>HashMap&lt;String,u8&gt;){
+    <span class="macro">println!</span>(<span class="string">&quot;Tie game!&quot;</span>);
+    stats.entry(String::from(<span class="string">&quot;Tie games&quot;</span>)).and_modify(|val| <span class="kw-2">*</span>val+=<span class="number">1</span>);
+}
+
+<span class="doccomment">///Prints the contents of both hands given in a more readable and &quot;game friendly&quot; format.
+///  **Currently being reworked to support Hand and Card structs.**
+///
+/// Arguments:
+/// * player_hand: &amp;Vec&lt;Cardvalue&gt; Players hand
+/// * dealer_hand: &amp;Vec&lt;Cardvalue&gt; Dealers hand
+</span><span class="kw">fn </span>print_both_hands(player_hand: <span class="kw-2">&amp;</span>Vec&lt;Cardvalue&gt;,dealer_hand: <span class="kw-2">&amp;</span>Vec&lt;Cardvalue&gt;){
+    <span class="comment">//let player_iter = player_hand.iter();
+    //let dealer_iter = dealer_hand.iter();
+    </span><span class="kw">let </span><span class="kw-2">mut </span>larger_hand = Vec::&lt;u8&gt;::new();
+    <span class="kw">let </span><span class="kw-2">mut </span>other_hand = Vec::&lt;u8&gt;::new();
+    <span class="kw">let </span><span class="kw-2">mut </span>size:usize = <span class="number">0</span>;
+    <span class="kw">let </span><span class="kw-2">mut </span>hand_info:Vec&lt;String&gt; = Vec::new();
+    <span class="comment">//Populate hand_info with player_hand first, then dealer_hand.
+    </span><span class="kw">for </span>x <span class="kw">in </span>player_hand.iter(){
+        hand_info.push(<span class="macro">format!</span>(<span class="string">&quot;{} of {}&quot;</span>,x, <span class="string">&quot;Spades&quot;</span>));
+    }
+    <span class="comment">//We got um bois
+    </span><span class="kw">for </span>y <span class="kw">in </span>hand_info.iter_mut(){
+        <span class="macro">println!</span>(<span class="string">&quot;{}&quot;</span>,y);
+    }
+    <span class="comment">//I could turn hand into a struct that has a method that will return
+    //an element at that index if it exists or return &quot;&quot; if not.
+</span>}
 
 <span class="comment">/*
     deal_card: returns a random number of type Cardvalue
-*/</span>
-<span class="doccomment">///Returns a new card instance with a random value and suit.</span>
-<span class="doccomment">/// </span>
-<span class="doccomment">///Returns:</span>
-<span class="doccomment">///* Card struct with random values.</span>
-<span class="kw">fn</span> <span class="ident">deal_card</span>() -&gt; <span class="ident">Card</span>{
-    <span class="comment">//This will return a Card struct now that it will get from get_random_card INSTEAD of get_random_num</span>
-    <span class="kw">return</span> <span class="ident">get_random_card</span>();
+*/
+</span><span class="doccomment">///Returns a new card instance with a random value and suit.
+/// 
+///Returns:
+///* Card struct with random values.
+</span><span class="kw">fn </span>deal_card() -&gt; Card{
+    <span class="comment">//This will return a Card struct now that it will get from get_random_card INSTEAD of get_random_num
+    </span><span class="kw">return </span>get_random_card();
 }
-<span class="comment">/*
-    get_random_num: returns a random value of type Cardvalue
-    Uses thread_rng() and .gen_range() to produce a random value.
-*/</span>
-<span class="doccomment">///Generates a random number between 1 and a given upper bound.</span>
-<span class="doccomment">/// </span>
-<span class="doccomment">///Arguments:</span>
-<span class="doccomment">///* limit: u8. The upper bound (non-inclusive) used for number generation.  </span>
-<span class="kw">fn</span> <span class="ident">get_random_num</span>(<span class="ident">limit</span>: <span class="ident">u8</span>)-&gt;<span class="ident">Cardvalue</span>{
-    <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">rng</span> <span class="op">=</span> <span class="ident">thread_rng</span>();
-    <span class="comment">// Exclusive range</span>
-    <span class="kw">let</span> <span class="ident">n</span>: <span class="ident">Cardvalue</span> <span class="op">=</span> <span class="ident">rng</span>.<span class="ident">gen_range</span>(<span class="number">1</span>..<span class="ident">limit</span>);
-    <span class="kw">if</span> <span class="ident">get_debug_mode</span>() <span class="op">==</span> <span class="number">1</span>{
-        <span class="macro">println!</span>(<span class="string">&quot;Number generated: {}&quot;</span>,<span class="ident">n</span>);
+<span class="doccomment">///Generates a random number between 1 and a given upper bound.
+/// 
+///Arguments:
+///* limit: u8. The upper bound (non-inclusive) used for number generation.  
+</span><span class="kw">fn </span>get_random_num(limit: u8)-&gt;Cardvalue{
+    <span class="kw">let </span><span class="kw-2">mut </span>rng = thread_rng();
+    <span class="comment">// Exclusive range
+    </span><span class="kw">let </span>n: Cardvalue = rng.gen_range(<span class="number">1</span>..limit);
+    <span class="kw">if </span>get_debug_mode() == <span class="number">1</span>{
+        <span class="macro">println!</span>(<span class="string">&quot;Number generated: {}&quot;</span>,n);
     }
-    <span class="ident">n</span>
+    n
 }
 
-<span class="doccomment">///Generates a Card with random values for attributes value, name, and suit.</span>
-<span class="doccomment">///</span>
-<span class="doccomment">///Returns:</span>
-<span class="doccomment">///* Card struct with generated values.</span>
-<span class="kw">fn</span> <span class="ident">get_random_card</span>() -&gt; <span class="ident">Card</span>{
-    <span class="doccomment">///String literal array that holds all suit names.</span>
-    <span class="kw">let</span> <span class="ident">all_suits</span>:[<span class="kw-2">&amp;</span><span class="ident">str</span>;<span class="number">4</span>] <span class="op">=</span> [<span class="string">&quot;Clubs&quot;</span>,<span class="string">&quot;Spades&quot;</span>,<span class="string">&quot;Hearts&quot;</span>,<span class="string">&quot;Diamonds&quot;</span>];
-        <span class="comment">//Implement fn parse_value into card to handle reducing down 11,12,13 into 10s</span>
-    <span class="kw">let</span> <span class="ident">this_value</span> <span class="op">=</span> <span class="ident">get_random_num</span>(<span class="number">13</span>);
-    <span class="kw">let</span> <span class="ident">suit_num</span>:<span class="ident">usize</span> <span class="op">=</span> (<span class="ident">get_random_num</span>(<span class="number">4</span>) <span class="op">-</span> <span class="number">1</span>).<span class="ident">into</span>();
-    <span class="kw">let</span> <span class="ident">suit</span>:<span class="kw-2">&amp;</span><span class="ident">str</span> <span class="op">=</span> <span class="ident">all_suits</span>[<span class="ident">suit_num</span>];
-    <span class="kw">return</span> <span class="ident">Card</span>{<span class="ident">value</span>:<span class="ident">this_value</span>,<span class="ident">name</span>:<span class="ident">Card::get_card_name</span>(<span class="ident">this_value</span>),<span class="ident">suit</span>:<span class="ident">suit</span>}
+<span class="doccomment">///Generates a Card with random values for attributes value, name, and suit.
+///
+///Returns:
+///* Card struct with generated values.
+</span><span class="kw">fn </span>get_random_card() -&gt; Card{
+    <span class="kw">let </span>all_suits:[<span class="kw-2">&amp;</span>str;<span class="number">4</span>] = [<span class="string">&quot;Clubs&quot;</span>,<span class="string">&quot;Spades&quot;</span>,<span class="string">&quot;Hearts&quot;</span>,<span class="string">&quot;Diamonds&quot;</span>];
+        <span class="comment">//Implement fn parse_value into card to handle reducing down 11,12,13 into 10s
+    </span><span class="kw">let </span>this_value = get_random_num(<span class="number">13</span>);
+    <span class="kw">let </span>suit_num:usize = (get_random_num(<span class="number">4</span>) - <span class="number">1</span>).into();
+    <span class="kw">let </span>suit:<span class="kw-2">&amp;</span>str = all_suits[suit_num];
+    <span class="kw">let </span>values = (get_random_num(<span class="number">13</span>),all_suits[(&lt;u8 <span class="kw">as </span>Into&lt;usize&gt;&gt;::into(get_random_num(<span class="number">4</span>) - <span class="number">1</span>))]);
+    <span class="kw">return </span>Card{value:values.<span class="number">0</span>,name:Card::get_card_name(values.<span class="number">0</span>),suit:values.<span class="number">1</span>}
 }
 
-</code></pre></div>
-</section></div></main><div id="rustdoc-vars" data-root-path="../../" data-current-crate="blackjack" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.63.0 (4b91a6ea7 2022-08-08)" ></div>
-</body></html>
+<span class="comment">//TODO: REWORK QUIT(q in input and saying no to replay) TO EXIT SAFELY AND WRITE NEW VALUES TO stats.txt
+//Simplest way is to recieve a &#39;q&#39; input and return to (or call) the main function with a 
+//new quit flag set to true.
+
+//Add an option to look at stats after or before a game.
+    //Maybe a function that returns the map as a string to double as both
+    //the display and the writing string.
+</span></code></pre></div>
+</section></div></main><div id="rustdoc-vars" data-root-path="../../" data-current-crate="blackjack" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.65.0 (897e37553 2022-11-02)" ></div></body></html>

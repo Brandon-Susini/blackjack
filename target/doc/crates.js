@@ -1,1 +1,1 @@
-window.ALL_CRATES = ["blackjack","cfg_if","getrandom","libc","ppv_lite86","rand","rand_chacha","rand_core"];
+window.ALL_CRATES = ["blackjack","cfg_if","getrandom","ppv_lite86","rand","rand_chacha","rand_core"];

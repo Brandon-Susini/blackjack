@@ -1,5 +1,1 @@
-Detailed Changes of commit "Print card rework"
--Made constructor for hand
--Gave hand new field, owner
--Changed Card implementation print_card() to get_card_string()
--Formatting changes to make output look better
+Re-Generated Docs
