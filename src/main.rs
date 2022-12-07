@@ -77,7 +77,7 @@ impl Hand{
         println!("==============");
         println!("| *{}'s Hand:",self.owner);
         for (x,card) in self.cards.iter().enumerate(){
-            println!("| Card {}, \t{} of {}",x+1,card.value, card.suit);
+            println!("| Card {}, \t{} of {}",x+1,card.name, card.suit);
         }
         println!("==============");
     }
