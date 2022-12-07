@@ -18,6 +18,13 @@ struct Card{
     suit: &'static str,
 }
 impl Card{
+    fn new(v:u8, name:u8, s:&'static str) -> Card{
+        Card{
+            value:v,
+            name:Card::get_card_name(name),
+            suit:s
+        }
+    }
     fn get_card_name(value:Cardvalue)-> &'static str{
         match value{
             1 => return "Ace",
@@ -57,13 +64,19 @@ impl Hand{
     ///Iterates through all cards in a Hand and returns the sum of the values.
     fn calculate_total(&self) -> Cardvalue{
         let mut sum:Cardvalue = 0;
+        let mut aces = 0;
         for x in self.cards.iter(){
-            if x.name == "Ace" && sum + 11 <= 21{
-                sum += 11;
-            }else if x.name == "Ace" && sum + 11 >21{
-                sum += x.value;
+            if x.name == "Ace"{
+                aces += 1;
             }else{
                 sum += x.value;
+            }
+        }
+        for x in 0..aces{
+            if sum + 11 <= 21{
+                sum += 11;
+            }else{
+                sum += 1;
             }
         }
         return sum;
@@ -350,7 +363,8 @@ fn get_random_card() -> Card{
     let suit_num:usize = (get_random_num(4) - 1).into();
     let suit:&str = all_suits[suit_num];
     let values = (get_random_num(13),all_suits[(<u8 as Into<usize>>::into(get_random_num(4) - 1))]);
-    return Card{value:values.0,name:Card::get_card_name(values.0),suit:values.1}
+    //return Card{value:values.0,name:Card::get_card_name(values.0),suit:values.1}
+    return Card::new(values.0.clamp(1, 10),values.0,values.1);
 }
 
 //TODO: REWORK QUIT(q in input and saying no to replay) TO EXIT SAFELY AND WRITE NEW VALUES TO stats.txt
